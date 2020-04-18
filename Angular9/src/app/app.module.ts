@@ -13,6 +13,8 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserService } from './shared/user.service';
 
+// IE Browser
+
 @NgModule({
   declarations: [
     AppComponent,

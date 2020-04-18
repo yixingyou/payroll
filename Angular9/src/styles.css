@@ -143,13 +143,34 @@ input[type=text],input[type=password] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus,input[type=password]:focus {
+input[type=text]:focus,input[type=password]:focus{
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
+
 }
 
-input[type=text]:placeholder {
-  color: #cccccc;
+input[type=text]:focus::-webkit-input-placeholder{
+  color: #fff;
+}
+
+input[type=password]:focus::-webkit-input-placeholder{
+  color: #fff;
+}
+
+input[type=text]:focus::-moz-placeholder{
+  color: #fff;
+}
+
+input[type=password]:focus::-moz-placeholder{
+  color: #fff;
+}
+
+input[type=text]:focus::-ms-input-placeholder{
+  color: #fff;
+}
+
+input[type=password]:focus::-ms-input-placeholder{
+  color: #fff;
 }
 
 input[type=text].invalid-textbox,input[type=password].invalid-textbox{
