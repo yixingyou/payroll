@@ -3,12 +3,10 @@ import { NgForm } from '@angular/forms';
 
 import { UserService } from '../../shared/user.service';
 
-
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css'],
-  providers: [UserService]
+  styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
   // tslint:disable-next-line: max-line-length

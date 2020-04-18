@@ -9,12 +9,17 @@ import { UserComponent } from './user/user.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 
 import { appRoutes } from './routes';
+import { SignInComponent } from './user/sign-in/sign-in.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserService } from './shared/user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    SignUpComponent
+    SignUpComponent,
+    SignInComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,7 @@ import { appRoutes } from './routes';
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
